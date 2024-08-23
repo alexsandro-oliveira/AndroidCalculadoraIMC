@@ -1,5 +1,6 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -20,7 +21,24 @@ class HomeActivity : AppCompatActivity() {
         val btnNext = findViewById<Button>(R.id.btn_next)
 
         btnNext.setOnClickListener {
-            println("Alex acao do botao" + edtName)
+
+            val helloName = edtName.text.toString()
+
+            if (helloName == "") {
+
+                Snackbar.make(
+                    edtName,
+                    "Preencha seu nome.",
+                    Snackbar.LENGTH_LONG
+                ).show()
+
+            } else {
+
+                val intent = Intent(this, MainActivity::class.java)
+                intent.putExtra(KEY_NAME, helloName)
+                startActivity(intent)
+            }
+
         }
 
     }

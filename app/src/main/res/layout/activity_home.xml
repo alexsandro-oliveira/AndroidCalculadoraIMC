@@ -16,7 +16,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="252dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="110dp"
             android:src="@drawable/astronaut2" />
 
         <TextView
@@ -28,6 +28,7 @@
             android:textColor="@color/white"
             android:textSize="30dp"
             android:textStyle="bold" />
+
 
 
     </LinearLayout>
@@ -59,6 +60,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edt_name"
+                android:drawableEnd="@drawable/icon_person"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_bg_gray_700"
@@ -69,6 +71,7 @@
             android:id="@+id/btn_next"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
             android:layout_marginHorizontal="50pt"
             android:layout_marginBottom="16dp"
             android:text="Próximo" />
