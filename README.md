@@ -17,7 +17,6 @@ Este projeto é um aplicativo Android nativo desenvolvido com a linguagem Kotlin
 
 
 ## Tecnologias
-Techs
 
 - Intent
 - Activity
