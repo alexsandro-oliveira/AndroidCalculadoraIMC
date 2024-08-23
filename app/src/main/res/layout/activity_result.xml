@@ -5,18 +5,68 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".ResultActivity">
 
-    <TextView
-        android:id="@+id/tv_result"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/vg_header"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="32pt"
-        android:textStyle="bold"
-        android:maxLength="5"
-        tools:text="23.66" />
+        android:background="@drawable/gradient_bg"
+        android:orientation="vertical"
+        android:paddingBottom="40dp"
+        >
+
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/icon_rocket"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Seu resultado IMC"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Confirme abaixo o resultado do seu IMC \ne a classificação:"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLength="5"
+            android:textSize="32pt"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="40dp"
+            tools:text="23.66" />
+
+
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
 
     <TextView
         android:id="@+id/tv_class_label"
@@ -29,5 +79,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/primary_900"
         tools:text="NORMAL" />
+
+</LinearLayout>
+
 </LinearLayout>
