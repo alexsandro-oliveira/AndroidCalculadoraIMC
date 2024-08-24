@@ -5,4 +5,11 @@
 
     <color name="primary_400">#cd00ea</color>
     <color name="primary_900">#5c00d2</color>
+
+    <color name="blue">#72b8d9</color>
+    <color name="green">#27c8a4</color>
+    <color name="yellow">#ffd900</color>
+    <color name="orange">#fea14a</color>
+    <color name="red">#ff454d</color>
+
 </resources>
